@@ -1,24 +1,9 @@
 <svg width="180" height="180" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="64" height="64" rx="14" fill="#FEF2F2"/>
-  <defs>
-    <linearGradient id="bg" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F87171"/>
-      <stop offset="1" stop-color="#DC2626"/>
-    </linearGradient>
-    <linearGradient id="leafL" x1="18" y1="16" x2="30" y2="34" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFF1F2"/>
-      <stop offset="1" stop-color="#FECACA"/>
-    </linearGradient>
-    <linearGradient id="leafR" x1="34" y1="16" x2="46" y2="34" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFF1F2"/>
-      <stop offset="1" stop-color="#FECACA"/>
-    </linearGradient>
-  </defs>
-  <circle cx="32" cy="32" r="28" fill="url(#bg)"/>
-  <circle cx="32" cy="32" r="28" stroke="#B91C1C" stroke-width="1" opacity="0.18"/>
-  <path d="M22 34c0-8 4-14 10-16 2 6 0 12-4 16-2 2-4 2-6 0z" fill="url(#leafL)"/>
-  <path d="M42 34c0-8-4-14-10-16-2 6 0 12 4 16 2 2 4 2 6 0z" fill="url(#leafR)"/>
-  <path d="M32 20v20" stroke="#FFF1F2" stroke-width="2.2" stroke-linecap="round"/>
-  <path d="M24 42c4 3 12 3 16 0" stroke="#FECACA" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
-  <circle cx="32" cy="20" r="2.2" fill="#FFF1F2" opacity="0.85"/>
+  <g fill="#C04A3E">
+    <path d="M36 28C36 16 48 8 58 14C64 18 64 28 58 34C52 38 44 36 38 32L36 28Z"/>
+    <path d="M36 28C36 16 48 8 58 14C64 18 64 28 58 34C52 38 44 36 38 32L36 28Z" transform="rotate(90 32 32)"/>
+    <path d="M36 28C36 16 48 8 58 14C64 18 64 28 58 34C52 38 44 36 38 32L36 28Z" transform="rotate(180 32 32)"/>
+    <path d="M36 28C36 16 48 8 58 14C64 18 64 28 58 34C52 38 44 36 38 32L36 28Z" transform="rotate(270 32 32)"/>
+  </g>
 </svg>
