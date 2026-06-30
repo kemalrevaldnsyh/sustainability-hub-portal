@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   title: "Sustainability Hub Portal",
   description:
     "Central hub portal dashboard integrating KPN sustainability web applications.",
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    apple: [{ url: "/apple-icon.svg", type: "image/svg+xml" }],
+  },
 };
 
 export default function RootLayout({
