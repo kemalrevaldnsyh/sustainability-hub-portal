@@ -16,7 +16,7 @@ export const apps: AppCardData[] = [
     title: "Sustainability Dashboard",
     description:
       "Central system for managing supplier due diligence, grievance mechanisms, and mill onboarding.",
-    href: "https://sustainability-dws.vercel.app/",
+    href: "https://sustainability-dws-psi.vercel.app/",
     status: "active",
     icon: Leaf,
   },
@@ -25,7 +25,7 @@ export const apps: AppCardData[] = [
     title: "GHG Calculator",
     description:
       "Greenhouse Gas savings calculator for KPN Downstream Sustainability division.",
-    href: "https://ghg-calculator-kpn-downstream-susta.vercel.app/",
+    href: "https://ghg-calculator-six.vercel.app/",
     status: "active",
     icon: Calculator,
   },
