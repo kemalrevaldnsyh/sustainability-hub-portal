@@ -5,6 +5,7 @@ import {
   ClipboardCheck,
   FileSearch,
   GitBranch,
+  LayoutDashboard,
   Leaf,
 } from "lucide-react";
 
@@ -28,6 +29,15 @@ export const apps: AppCardData[] = [
     href: "https://ghg-calculator-six.vercel.app/",
     status: "active",
     icon: Calculator,
+  },
+  {
+    id: "ggl-supplier-dashboard",
+    title: "GGL Supplier Dashboard",
+    description:
+      "Monitor and manage GGL supplier data, performance metrics, and sustainability compliance.",
+    href: "https://ggl-supplier-dashboard.vercel.app/",
+    status: "active",
+    icon: LayoutDashboard,
   },
   {
     id: "supplier-assessment",
