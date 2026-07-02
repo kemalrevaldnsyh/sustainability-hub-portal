@@ -3,7 +3,7 @@ import { Navbar } from "@/components/layout/Navbar";
 
 export default function HomePage() {
   return (
-    <div className="relative min-h-screen overflow-x-hidden">
+    <div className="relative min-h-screen">
       <div className="pointer-events-none fixed inset-0 z-0" aria-hidden>
         <img
           src="/portal-background.jpg"
@@ -15,7 +15,7 @@ export default function HomePage() {
 
       <div className="relative z-10">
         <Navbar />
-        <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-10">
+        <main className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
           <DashboardGrid />
         </main>
       </div>

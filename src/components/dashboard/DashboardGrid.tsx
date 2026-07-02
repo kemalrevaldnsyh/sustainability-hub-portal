@@ -2,43 +2,26 @@ import { AppCard } from "@/components/dashboard/AppCard";
 import { apps } from "@/data/apps";
 
 export function DashboardGrid() {
-  const activeCount = apps.filter((app) => app.status === "active").length;
-  const comingSoonCount = apps.filter(
-    (app) => app.status === "coming-soon",
-  ).length;
+  const activeApps = apps.filter((app) => app.status === "active");
 
   return (
-    <div className="space-y-8">
-      <section className="space-y-2">
-        <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+    <div className="space-y-8 sm:space-y-12">
+      <section className="max-w-2xl">
+        <p className="text-xs font-medium uppercase tracking-[0.14em] text-slate-500 sm:tracking-[0.16em]">
+          KPN Downstream Sustainability
+        </p>
+        <h1 className="mt-2 text-2xl font-semibold tracking-tight text-slate-900 sm:mt-3 sm:text-3xl lg:text-4xl">
           Sustainability Hub Portal
         </h1>
-        <p className="max-w-2xl text-base text-slate-600">
-          Launch connected sustainability tools from one central dashboard.
-          Active applications open in a new tab; upcoming modules are currently
-          in development.
+        <p className="mt-3 text-sm leading-relaxed text-slate-600 sm:mt-4 sm:text-base">
+          Access active sustainability modules from a single entry point. Select
+          an application below to open it in a new tab.
         </p>
       </section>
 
-      <section className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-        {apps.map((app) => (
-          <AppCard key={app.id} app={app} />
-        ))}
-      </section>
-
-      <section className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-        {[
-          { label: "Total Applications", value: apps.length },
-          { label: "Active", value: activeCount },
-          { label: "Coming Soon", value: comingSoonCount },
-        ].map((stat) => (
-          <div
-            key={stat.label}
-            className="rounded-2xl border border-slate-200 bg-white px-5 py-4 shadow-sm"
-          >
-            <p className="text-2xl font-bold text-slate-900">{stat.value}</p>
-            <p className="text-sm text-slate-500">{stat.label}</p>
-          </div>
+      <section className="portal-module-grid">
+        {activeApps.map((app, index) => (
+          <AppCard key={app.id} app={app} index={index} />
         ))}
       </section>
     </div>
